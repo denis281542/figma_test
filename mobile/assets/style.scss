@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: red;
+}
+
+.first {
+    background: url("../assets/images/bg.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
