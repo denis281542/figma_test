@@ -40,6 +40,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .first__description--inner {
     padding: 75px 0 135px;
+
+    @media (max-width: 480px) {
+        padding: 30px 0 92px;
+    }
 }
 
 .autor__title {
@@ -104,11 +108,13 @@ body, h1, h2, h3, h4, h5, h6, p {
     @media (max-width: 480px) {
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 13px;
     }
 }
 
 .input {
-    padding: 14px 116px 18px 20px;
+    padding: 14px 0 18px 20px;
     border-radius: 35px;
     border: none;
     font-family: Lato;
@@ -119,6 +125,14 @@ body, h1, h2, h3, h4, h5, h6, p {
     text-transform: uppercase;
     color: #000000;
     width: 262px;
+
+    &:invalid:not(:placeholder) {
+        border: 2px solid red;
+      }
+
+    &:valid {
+        border: 2px solid green;
+      }
 }
 
 .button__first {
@@ -134,6 +148,11 @@ body, h1, h2, h3, h4, h5, h6, p {
     text-transform: uppercase;
     color: #FFFFFF;
     border: none;
+    cursor: pointer;
+
+    @media (max-width: 480px) {
+        margin-top: 15px;
+    }
 }
 
 .first__conditions {
@@ -144,6 +163,10 @@ body, h1, h2, h3, h4, h5, h6, p {
     line-height: 14px;
 
     color: #EDD9D9;
+
+    @media (max-width: 480px) {
+        padding: 0 108px;
+    }
 }
 
 //Second display
@@ -158,6 +181,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 .second__inner {
     display: flex;
     padding-top: 50px;
+
+    @media (max-width: 480px) {
+        flex-wrap: wrap;
+    }
 }
 
 .second__inner--reverse {
@@ -279,6 +306,10 @@ body, h1, h2, h3, h4, h5, h6, p {
     padding: 40px 0 60px;
     background-color: #fff;
     margin-top: 70px;
+
+    @media (max-width: 480px) {
+        width: 460px;
+    }
 }
 
 .fourth__list {
@@ -291,6 +322,11 @@ body, h1, h2, h3, h4, h5, h6, p {
     
     margin-top: 40px;
     margin-left: 55px;
+
+    @media (max-width: 480px) {
+        width: 447ox;
+        margin-left: 9px;
+    }
 }
 
 .list__item {
@@ -312,6 +348,10 @@ body, h1, h2, h3, h4, h5, h6, p {
     list-style-type: none; 
     counter-reset: num;
     max-width: 624px;
+
+    @media (max-width: 480px) {
+        width: 444px;
+    }
 }
 
 .list__item--number {
@@ -353,12 +393,23 @@ body, h1, h2, h3, h4, h5, h6, p {
  .five__top {
      display: flex;
      justify-content: space-between;
+
+     @media (max-width: 480px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
  }
 
  .five__bottom {
      display: flex;
      justify-content: space-between;
      padding: 40px 162px 50px;
+
+     @media (max-width: 480px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
  }
 
  .second__title--five {
@@ -385,7 +436,6 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .five__text + .five__text {
     padding: 20px 12px;
-
 }
 
 .five__text::before {
@@ -403,6 +453,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 .five__bottom .five__text {
     padding: 20px 18px 0;
     width: 261px;
+
+    @media (max-width: 480px) {
+        padding-bottom: 20px;
+    }
 }
 
 .five__button {
@@ -424,6 +478,14 @@ body, h1, h2, h3, h4, h5, h6, p {
 .sixth__inner {
     display: flex;
     margin-top: 45px;
+
+    @media (max-width: 480px) {
+        flex-wrap: wrap;
+
+        img {
+            margin: auto;
+        }
+    }
 }
 
 .sixth__description {
@@ -446,6 +508,11 @@ body, h1, h2, h3, h4, h5, h6, p {
     list-style: none;
     padding-left: 51px;
     margin-bottom: 0;
+
+    @media (max-width: 480px) {
+        width: 460px;
+        padding-left: 10px;
+    }
 }
 
 .sixth__item {
@@ -475,6 +542,11 @@ body, h1, h2, h3, h4, h5, h6, p {
     display: flex;
     justify-content: space-between;
     max-width: 1141px;
+
+    @media (max-width: 480px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 // Seven display
@@ -494,6 +566,10 @@ body, h1, h2, h3, h4, h5, h6, p {
     max-width: 946px;
     width: 100%;
     margin: 0 auto 60px; 
+
+    @media (max-width: 480px) {
+        margin-bottom: 20px;
+    }
 }
 
 .img__seven {
@@ -539,6 +615,7 @@ body, h1, h2, h3, h4, h5, h6, p {
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
+    width: 770px;
 }
 
 .feedback__text {
@@ -569,6 +646,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 .button__first--seven {
     width: 361px;
     margin-bottom: 125px;
+
+    @media (max-width: 480px) {
+        margin-bottom: 30px;
+    }
 }
 
 // Footer
@@ -581,6 +662,12 @@ body, h1, h2, h3, h4, h5, h6, p {
     display: flex;
     justify-content: space-between;
     padding: 30px 0 37px;
+
+    @media (max-width: 480px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 .footer__text {
@@ -593,6 +680,10 @@ body, h1, h2, h3, h4, h5, h6, p {
     text-transform: uppercase;
 
     color: #FFFFFF;
+
+    @media (max-width: 480px) {
+        margin-top: 10px;
+    }
 }
 
 .footer__text--downcase {
@@ -613,6 +704,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .footer__col--rigth {
     text-align: right;
+
+    @media (max-width: 480px) {
+        text-align: center;
+    }
 }
 
 .footer__info {
@@ -633,6 +728,10 @@ body, h1, h2, h3, h4, h5, h6, p {
         &:last-child {
             padding-bottom: 0;
         }
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 10px;
     }
 }
 
